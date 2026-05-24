@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoiCarta – Privacy Policy</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #2d3748; line-height: 1.7; background-color: #f7fafc; }
+    .container { background: #ffffff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+    h1 { color: #2563EB; font-size: 24pt; margin-bottom: 5px; }
+    .subtitle { color: #718096; font-size: 10pt; margin-bottom: 30px; border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; }
+    h2 { color: #1a202c; font-size: 14pt; margin-top: 32px; border-left: 4px solid #2563EB; padding-left: 10px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 10px; }
+    p { margin-bottom: 15px; text-align: justify; }
+    a { color: #2563EB; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>VoiCarta – Privacy Policy</h1>
+    <div class="subtitle"><strong>Last updated:</strong> May 24, 2026</div>
+
+    <p>VoiCarta is built and operated by an independent developer. We deeply respect your privacy and operate on a strict <strong>privacy-by-design</strong> principle. VoiCarta does <strong>not</strong> collect, track, or harvest any personally identifiable information (PII). All user-generated content remains entirely in your control.</p>
+
+    <h2>1. Data We Process (And How It Is Handled)</h2>
+    <p>To provide core application functionalities, certain data is processed transiently or stored strictly on your own device:</p>
+    <ul>
+      <li><strong>Audio Recordings & Voice Data:</strong> When you use the voice command feature, your audio recordings are transmitted securely via an encrypted HTTPS connection through a secure serverless proxy (Cloudflare Worker) to the AI transcription infrastructure (Replicate API using Whisper AI). This audio data is processed <strong>ephemerally</strong> in memory solely to convert your speech into text. Audio files are immediately and permanently deleted after processing; they are never stored, saved, logged, or used for model training on our servers or by third-party processors.</li>
+      <li><strong>Anonymous Device Identifier:</strong> Upon the first launch of the application, a randomly generated, non-hardware-linked anonymous ID is created locally on your device. This ID is transmitted to our serverless infrastructure (Cloudflare KV) exclusively to enforce and verify the 20-transcription free monthly usage limit. This identifier is completely global, completely anonymous, and can never be linked to your real identity, name, or email.</li>
+      <li><strong>Mind Map Content & File Persistence:</strong> All your mind maps, nodes, and organizational structures are saved and managed locally on your device using local storage mechanisms (Zustand state persistence / native device storage). We have no remote servers tracking, aggregating, or receiving your mind map files. If you delete the app or clear its data, your mind maps are permanently erased from your device.</li>
+    </ul>
+
+    <h2>2. Data We Absolutely Do Not Collect</h2>
+    <p>We do not collect, request, or maintain any database containing the following:</p>
+    <ul>
+      <li>Personal identification (such as name, email address, phone number, or user accounts)</li>
+      <li>Precise or approximate geographical location data</li>
+      <li>Advertising identifiers (such as IDFA or GAID) and marketing tracking cookies</li>
+      <li>Device telemetry, search logs, or app interaction tracking analytics</li>
+    </ul>
+
+    <h2>3. Third-Party Services & Infrastructure</h2>
+    <p>The application relies on trusted, industry-standard third-party providers to execute specific backend tasks and process transactions:</p>
+    <ul>
+      <li><strong>Cloudflare (Serverless Worker & KV Storage):</strong> Used to securely manage API keys and verify limits via the anonymous device identifier. Cloudflare acts under strict data security standards.</li>
+      <li><strong>Replicate API (Whisper AI):</strong> Handles the automated conversion of voice to text. Data processing is non-persistent and temporary, governed strictly by privacy boundaries. For more information, see <a href="https://replicate.com/privacy" target="_blank">Replicate's Privacy Policy</a>.</li>
+      <li><strong>App Store & Google Play (Apple Inc. & Google LLC):</strong> All in-app premium tier subscriptions, transactions, and licensing verification are managed directly by Apple and Google. Any billing information, credit card processing, or transaction logs are securely handled by these platform stores in accordance with their respective privacy policies.</li>
+    </ul>
+
+    <h2>4. Regulatory Compliance (GDPR, KVKK, and Children's Privacy)</h2>
+    <ul>
+      <li><strong>KVKK / GDPR Compliance:</strong> Because VoiCarta does not collect or store personal data, names, IP addresses, or identifiable records, no personal tracking occurs. Your processing of mind maps remains within your local perimeter.</li>
+      <li><strong>Children's Privacy:</strong> VoiCarta does not knowingly target, interact with, or collect information from children under the age of 13.</li>
+    </ul>
+
+    <h2>5. Changes to This Privacy Policy</h2>
+    <p>We reserve the right to modify this privacy policy to reflect technical updates or platform requirement changes. Any revisions will be marked with a new "Last updated" date at the top of this page.</p>
+
+    <h2>6. Governing Law & Jurisdiction</h2>
+    <p>This Privacy Policy and any data-related considerations shall be governed by and construed in accordance with the laws of the Republic of Turkey. Any disputes shall be subject to the exclusive jurisdiction of the courts located in Istanbul, Turkey.</p>
+
+    <h2>7. Contact & Support</h2>
+    <p>Since this app is developed independently, support and transparency are handled publicly. If you have any inquiries regarding your privacy or data handling, you may open an official issue on our dedicated <a href="https://github.com/SefUy/voicarta-legal/issues" target="_blank">GitHub Issues Page</a>.</p>
+  </div>
+</body>
+</html>
