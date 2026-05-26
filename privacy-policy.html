@@ -20,15 +20,15 @@
 <body>
   <div class="container">
     <h1>VoiCarta – Privacy Policy</h1>
-    <div class="subtitle"><strong>Last updated:</strong> May 24, 2026</div>
+    <div class="subtitle"><strong>Last updated:</strong> May 26, 2026</div>
 
     <p>VoiCarta is built and operated by an independent developer. We deeply respect your privacy and operate on a strict <strong>privacy-by-design</strong> principle. VoiCarta does <strong>not</strong> collect, track, or harvest any personally identifiable information (PII). All user-generated content remains entirely in your control.</p>
 
     <h2>1. Data We Process (And How It Is Handled)</h2>
     <p>To provide core application functionalities, certain data is processed transiently or stored strictly on your own device:</p>
     <ul>
-      <li><strong>Audio Recordings & Voice Data:</strong> When you use the voice command feature, your audio recordings are transmitted securely via an encrypted HTTPS connection through a secure serverless proxy (Cloudflare Worker) to the AI transcription infrastructure (Replicate API using Whisper AI). This audio data is processed <strong>ephemerally</strong> in memory solely to convert your speech into text. Audio files are immediately and permanently deleted after processing; they are never stored, saved, logged, or used for model training on our servers or by third-party processors.</li>
-      <li><strong>Anonymous Device Identifier:</strong> Upon the first launch of the application, a randomly generated, non-hardware-linked anonymous ID is created locally on your device. This ID is transmitted to our serverless infrastructure (Cloudflare KV) exclusively to enforce and verify the 20-transcription free monthly usage limit. This identifier is completely global, completely anonymous, and can never be linked to your real identity, name, or email.</li>
+      <li><strong>Audio Recordings & Voice Data:</strong> When you use the voice command feature, your audio recordings are transmitted securely via an encrypted HTTPS connection through a secure serverless proxy (Cloudflare Worker) to the AI transcription infrastructure (Groq API using Whisper AI). This audio data is processed <strong>ephemerally</strong> in memory solely to convert your speech into text. Audio files are immediately and permanently deleted after processing; they are never stored, saved, logged, or used for model training on our servers or by third-party processors.</li>
+      <li><strong>Anonymous Device Identifier:</strong> Upon the first launch of the application, a randomly generated, non-hardware-linked anonymous ID is created locally on your device. This ID is transmitted to our serverless infrastructure (Cloudflare KV) exclusively to enforce and verify the 20-transcription free monthly usage limit. This identifier is completely anonymous and can never be linked to your real identity, name, or email.</li>
       <li><strong>Mind Map Content & File Persistence:</strong> All your mind maps, nodes, and organizational structures are saved and managed locally on your device using local storage mechanisms (Zustand state persistence / native device storage). We have no remote servers tracking, aggregating, or receiving your mind map files. If you delete the app or clear its data, your mind maps are permanently erased from your device.</li>
     </ul>
 
@@ -45,7 +45,7 @@
     <p>The application relies on trusted, industry-standard third-party providers to execute specific backend tasks and process transactions:</p>
     <ul>
       <li><strong>Cloudflare (Serverless Worker & KV Storage):</strong> Used to securely manage API keys and verify limits via the anonymous device identifier. Cloudflare acts under strict data security standards.</li>
-      <li><strong>Replicate API (Whisper AI):</strong> Handles the automated conversion of voice to text. Data processing is non-persistent and temporary, governed strictly by privacy boundaries. For more information, see <a href="https://replicate.com/privacy" target="_blank">Replicate's Privacy Policy</a>.</li>
+      <li><strong>Groq API (Whisper AI):</strong> Handles the automated conversion of voice to text. Data processing is non-persistent and temporary, governed strictly by privacy boundaries. For more information, see <a href="https://groq.com/privacy-policy/" target="_blank">Groq's Privacy Policy</a>.</li>
       <li><strong>App Store & Google Play (Apple Inc. & Google LLC):</strong> All in-app premium tier subscriptions, transactions, and licensing verification are managed directly by Apple and Google. Any billing information, credit card processing, or transaction logs are securely handled by these platform stores in accordance with their respective privacy policies.</li>
     </ul>
 
